@@ -48,3 +48,4 @@ def start_game(tile_size, line_color):
 
 # 🔧 Näide: ruudu suurus 20 pikslit, punane ruudustik
 start_game(tile_size=20, line_color=(255, 0, 0))
+
