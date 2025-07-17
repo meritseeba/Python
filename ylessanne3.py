@@ -19,7 +19,7 @@ def start_game(tile_size, line_color):
     pygame.display.set_caption("Ruudustik 640x480 sees")
 
     # Roheline taust
-    green = (0, 128, 0)
+    green = (178, 255, 102)
 
     running = True
     while running:
@@ -33,11 +33,11 @@ def start_game(tile_size, line_color):
 
         # Joonista vertikaaljooned
         for x in range(0, cols * tile_size + 1, tile_size):
-            pygame.draw.line(screen, line_color, (x, 0), (x, rows * tile_size))
+            pygame.draw.line(screen, line_color, (x, 1), (x, rows * tile_size))
 
         # Joonista horisontaaljooned
         for y in range(0, rows * tile_size + 1, tile_size):
-            pygame.draw.line(screen, line_color, (0, y), (cols * tile_size, y))
+            pygame.draw.line(screen, line_color, (1, y), (cols * tile_size, y))
 
         # Uuenda ekraani
         pygame.display.flip()
